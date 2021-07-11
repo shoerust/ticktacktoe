@@ -105,6 +105,7 @@ import './index.css';
         }
       return (
         <div className="game">
+            <h1>noughts and crosses</h1>
           <div className="game-board">
             <Board 
                 squares={current.squares}
@@ -113,7 +114,8 @@ import './index.css';
           </div>
           <div className="game-info">
             <div>{status}</div>
-            <ol>{moves}</ol>
+            <h4>Moves</h4>
+            <ol className="moves-list">{moves}</ol>
           </div>
         </div>
       );
